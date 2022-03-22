@@ -54,6 +54,6 @@ Research and define the following terms to the best of your ability.
 
 3. ERB: Stands for eRuby; simply just a template that embeds Ruby into a text file
 
-4. Params: An alias of the parameters method; 
+4. Params: An alias of the parameters method; Allows us to pass a value to the controller, makes your code more dynamic
 
 5. API: Stands for Application Programming Interface; Basically, the API is the connection between the server and the enduser's device. The API is what takes commands from the enduser, sends and gives direction to the server, then returns the result back to the enduser

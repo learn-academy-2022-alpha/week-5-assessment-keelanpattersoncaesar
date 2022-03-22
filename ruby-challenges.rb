@@ -47,13 +47,13 @@ nums_array2 = [25, 17, 47, 11]
 # method => .each ? or .sum ?
 #  return
 
-# def summed_up array
-#     # current_total = 0
-#     array.sum
-# end
+def summed_up array
+    # current_total = 0
+    array.sum
+end
 
-# p summed_up(nums_array1) #result = 76
-# p summed_up(nums_array2) #result = 100
+p summed_up(nums_array1) #result = 76
+p summed_up(nums_array2) #result = 100
 
 
 
@@ -65,11 +65,11 @@ class Bike
     def initialize(model, wheels, current_speed)
         @model = model
         @wheels = '2'
-        @current_speed = current_speed
+        @current_speed = 0
     end
 
-    def pedal_faster
-        @current_speed + 5
+    def pedal_faster num
+        @current_speed += num
     end
     
     def bike_info
@@ -81,9 +81,10 @@ class Bike
     # end
 end
 
-vroom = Bike.new('Huffy','2', 20).bike_info
+p vroom = Bike.new('Huffy','2', 20).bike_info
+vroom.pedal_faster(5)
 p vroom
-p picking_up_speed = Bike.new('Huffy','2', @pedal_faster)
+
 
 # result = "The Huffy bike has 2 wheels and is traveling at 20 mph."
 #<Bike:0x00007fefc68d2198 @model="Huffy", @wheels="2", @current_speed=nil>
