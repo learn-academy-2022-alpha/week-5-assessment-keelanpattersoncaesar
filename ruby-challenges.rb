@@ -24,11 +24,13 @@ letter_t = 't'
 # if i.include? has the letter in it, print the index
 # I think I was overthinking it before
 
-# beverages_array.select do |i|
-#    if i.include? 'o' 
-#     p i
-#    end
-# end
+beverages_array.select do |i|
+   if i.include? letter_o 
+    p i
+   end
+end
+
+# beverages_array(letter_o)
 
 # # result: "coffee", "soda water"
 
